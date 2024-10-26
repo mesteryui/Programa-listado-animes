@@ -1,8 +1,9 @@
 <?xml-model href="listas-animes.dtd" type="application/xml-dtd"?>
 
 <animes>
-    <anime>
+    <anime numero="A1">
         <nombre>Acro Trip</nombre>
-        <estado></estado>
+        <estado>Emision</estado>
+        <episodios></episodios>
     </anime>
 </animes>
