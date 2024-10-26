@@ -1,5 +1,4 @@
-<?xml-model href="listas-animes.dtd" type="application/xml-dtd"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <animes>
     <anime>
         <nombre>Acro Trip</nombre>
@@ -8,10 +7,11 @@
         <genero>Fantasia</genero>
         <genero>Cosas de la vida</genero>
     </anime>
+    
     <anime>
         <nombre>Jujutsu Kaisen</nombre>
         <estado>Finalizado</estado>
         <episodiosVistos>24</episodiosVistos>
         <genero>Fantasia</genero>
     </anime>
-</animes>
+<anime><nombre>Index Toaru</nombre><estado>Finalizado</estado><episodiosVistos>24</episodiosVistos></anime></animes>

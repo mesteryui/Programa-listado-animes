@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 
+
 # Cargamos el archivo XML
 arbol = ET.parse("lista-animes.xml")
 raiz = arbol.getroot()
