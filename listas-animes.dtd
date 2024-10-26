@@ -2,5 +2,5 @@
 <!ELEMENT anime (nombre,estado,episodios)>
 <!ATTLIST anime numero ID #IMPLIED>
 <!ELEMENT nombre (#PCDATA)>
-<!ELEMENT estado (Emision|Pausa|Finalizado)>
+<!ELEMENT estado (#PCDATA)>
 <!ELEMENT episodios (#PCDATA)>

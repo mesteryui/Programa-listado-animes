@@ -4,6 +4,6 @@
     <anime numero="A1">
         <nombre>Acro Trip</nombre>
         <estado>Emision</estado>
-        <episodios></episodios>
+        <episodios>5</episodios>
     </anime>
 </animes>
