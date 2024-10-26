@@ -5,6 +5,6 @@ Este programa sirve para mostrar los animes almacenados en un XML, permitiendo b
 Tambien permite buscar por generos todos los anime de ese genero
 
 ```mermaid
-ArchivoXML --> ProgramaBusquedaNombre;
-ArchivoXML --> ProgramaBusquedaGenero;
+ArchivoXML-->ProgramaBusquedaNombre;
+ArchivoXML-->ProgramaBusquedaGenero;
 ```
