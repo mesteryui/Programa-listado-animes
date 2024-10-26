@@ -1,6 +1,7 @@
 <!ELEMENT animes (anime*)>
-<!ELEMENT anime (nombre,estado,episodiosVistos)>
+<!ELEMENT anime (nombre,estado,episodiosVistos,genero*)>
 <!ATTLIST anime numero ID #IMPLIED>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT estado (#PCDATA)>
 <!ELEMENT episodiosVistos (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
