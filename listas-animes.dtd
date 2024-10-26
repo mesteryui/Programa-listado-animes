@@ -1,0 +1,4 @@
+<!ELEMENT animes (anime*)>
+<!ELEMENT anime (nombre,estado)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>

@@ -1,0 +1,8 @@
+<?xml-model href="listas-animes.dtd" type="application/xml-dtd"?>
+
+<animes>
+    <anime>
+        <nombre>Acro Trip</nombre>
+        <estado></estado>
+    </anime>
+</animes>
