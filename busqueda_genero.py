@@ -7,9 +7,9 @@ raiz = arbol.getroot()
 # Obtenemos el nombre del anime a buscar
 genero = input("Dime el genero por el que quieres buscar:")
 
-# Indicamos que queremos desde la etiqueta anime nos vamos a la etiqueta nombre que esta dentro de esta ultima y buscamos el contenido
-animes = raiz.find("anime[generp='" + genero + "']")
 
-print("\nNombre del Anime: " + animes.find('nombre').text)
-print("Estado: " + animes.find('estado').text)
-print("Episodios Vistos: " + animes.find('episodiosVistos').text)
+animes = raiz.findall("anime[genero='" + genero + "']")
+for anime in animes:
+    print("\nNombre del Anime: " + anime.find('nombre').text)
+    print("Estado: " + anime.find('estado').text)
+    print("Episodios Vistos: " + anime.find('episodiosVistos').text)
