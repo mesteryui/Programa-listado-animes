@@ -1,7 +1,7 @@
 from obtener_arbol import *
 def BusquedaNombre():
     nombre = input("Introduzca nombre del anime:")
-    anime = accederArbol().find("anime[nombre='" + anime + "']")
+    anime = accederArbol().find("anime[nombre='" + nombre + "']")
     return anime
 
 # Cargamos el archivo XML
