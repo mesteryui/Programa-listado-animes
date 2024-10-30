@@ -1,26 +1,26 @@
-import xml.etree.ElementTree as ET 
+from obtener_arbol import *
 
-arbol = ET.parse("lista-animes.xml")
-raiz = arbol.getroot()
+def añadirNuevoAnime():
+    raiz = accederArbol()
 
-nombre_anime = input("Introduzca el nombre del anime:")
+    nombre_anime = input("Introduzca el nombre del anime:")
 
-estado_anime = input("Introduzca el estado (Emision,Finalizado) del anime:")
+    estado_anime = input("Introduzca el estado (Emision,Finalizado) del anime:")
 
-episodios_vistos = input("Episodios vistos:")
+    episodios_vistos = input("Episodios vistos:")
 
-anime = ET.SubElement(raiz,"anime")
+    anime = ET.SubElement(raiz,"anime")
 
-nombre_animeXML = ET.SubElement(anime,"nombre")
+    nombre_animeXML = ET.SubElement(anime,"nombre")
 
-nombre_animeXML.text = nombre_anime
+    nombre_animeXML.text = nombre_anime
 
-estado_animeXML = ET.SubElement(anime,"estado")
-estado_animeXML.text = estado_anime
+    estado_animeXML = ET.SubElement(anime,"estado")
+    estado_animeXML.text = estado_anime
 
-episodios_vistosXML = ET.SubElement(anime, "episodiosVistos")
-episodios_vistosXML.text = episodios_vistos
+    episodios_vistosXML = ET.SubElement(anime, "episodiosVistos")
+    episodios_vistosXML.text = episodios_vistos
 
-arbol = ET.ElementTree(raiz)
+    arbol = ET.ElementTree(raiz)
 
-arbol.write("lista-animes.xml", encoding="utf-8", xml_declaration=True)
+    arbol.write("lista-animes.xml", encoding="UTF-8", xml_declaration=True)

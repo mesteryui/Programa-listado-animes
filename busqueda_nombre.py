@@ -1,16 +1,15 @@
-import xml.etree.ElementTree as ET
+from obtener_arbol import *
+def BusquedaNombre():
+    nombre1 = input("Introduzca nombre del anime:")
+    nombre = accederArbol().find("anime[nombre='" + nombre1 + "']")
+    return nombre
 
 # Cargamos el archivo XML
-arbol = ET.parse("lista-animes.xml")
-raiz = arbol.getroot()
-
-# Obtenemos el nombre del anime a buscar
-nombre = input("Dime el nombre del anime:")
-
-# Indicamos que queremos desde la etiqueta anime nos vamos a la etiqueta nombre que esta dentro de esta ultima y buscamos el contenido
-anime = raiz.find("anime[nombre='" + nombre + "']")
-
-print("\nNombre del Anime: " + anime.find('nombre').text)
-print("Estado: " + anime.find('estado').text)
-print("Episodios Vistos: " + anime.find('episodiosVistos').text)
+def MostrarNombre(nombre):
+  if nombre is not None:
+    print("\nNombre del Anime: " + nombre.find('nombre').text)
+    print("Estado: " + nombre.find('estado').text)
+    print("Episodios Vistos: " + nombre.find('episodiosVistos').text)
+  else:
+     print("No se ha encontrado el anime")
 
