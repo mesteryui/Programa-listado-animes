@@ -1,6 +1,12 @@
 from obtener_arbol import *
 
-def añadirNuevoAnime():
+def NuevoAnime():
+    if not os.path.exists("lista-animes.xml"):
+        crear_archivo_xml("lista-animes.xml", "animes") 
+    else:
+        añadirAnime()
+
+def añadirAnime():
     raiz = accederArbol()
 
     nombre_anime = input("Introduzca el nombre del anime:")

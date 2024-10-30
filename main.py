@@ -9,7 +9,7 @@ def main():
     elif tipoBusqueda=="2":
         MostrarGenero(BuscarGenero())
     elif tipoBusqueda=="3":
-        añadirNuevoAnime()
+        NuevoAnime()
 
 if __name__ == "__main__":
     main()
