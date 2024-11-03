@@ -16,4 +16,4 @@ def crear_archivo_xml(nombre_archivo, nombre_raiz):
     arbol = ET.ElementTree(raiz)
 
     with open(nombre_archivo, "wb") as archivo:
-        arbol.write(archivo, encoding='utf-8', xml_declaration=True)
+        arbol.write(archivo, encoding='UTF-8', xml_declaration=True)

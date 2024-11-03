@@ -12,7 +12,7 @@ def NuevoAnime():
 def añadirAnime():
     """Esta funcion añade un anime al XML primero obtenemos la informacion que queremos del anime y despues la escribimos
     en el fichero"""
-    raiz = accederArbol("lista-animes") # Localizamos el elemento raiz
+    raiz = accederArbol("lista-animes.xml") # Localizamos el elemento raiz
 
     nombre_anime = input("Introduzca el nombre del anime:")
 
