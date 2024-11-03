@@ -1,11 +1,11 @@
 import xml.etree.ElementTree as ET
 import os
 
-def accederArbol(nombre):
+def accederArbol():
     """
     Esta funcion permite acceder al arbol de un archivo xml y devuelve el elemento raiz, como parametro pasamos el nombre del xml
     """
-    arbol = ET.parse(nombre)
+    arbol = ET.parse("lista-animes.xml")
     return arbol.getroot()
 
 def crear_archivo_xml(nombre_archivo, nombre_raiz):

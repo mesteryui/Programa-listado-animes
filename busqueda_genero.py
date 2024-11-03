@@ -3,7 +3,7 @@ from obtener_arbol import *
 # Obtenemos el nombre del anime a buscar
 def BuscarGenero():
     genero = input("Introduzca genero:")
-    animes = accederArbol("lista-animes").findall("anime[genero='" + genero + "']") # Obtenemos todas las etiquetas anime donde la subetiqueta genero sea fantasia
+    animes = accederArbol().findall("anime[genero='" + genero + "']") # Obtenemos todas las etiquetas anime donde la subetiqueta genero sea fantasia
     return animes
 
 def MostrarGenero(animes):
